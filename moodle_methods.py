@@ -201,7 +201,7 @@ def check_new_user_can_login():
     if driver.title == locators.moodle_dashboard_page_title and driver.current_url == locators.moodle_dashboard_url:
         if driver.find_element(By.XPATH, f'//span[contains(.,"{locators.full_name}")]').is_displayed():
             print(f'----- user full name is: {locators.full_name}')
-            logger('created')
+            #logger('created')
 
 
 def delete_user():
@@ -227,7 +227,7 @@ def delete_user():
     assert driver.find_element(By.LINK_TEXT, 'Browse list of users').is_displayed()
     sleep(0.25)
     print(f'User name: {locators.full_name} is deleted ')
-    logger('Deleted')
+    #logger('Deleted')
 
 
 def logger(action):
