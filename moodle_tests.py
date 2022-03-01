@@ -1,6 +1,6 @@
 import unittest
 import moodle_locatores as locators
-from moodle import moodle_methods as methods
+import moodle_methods as methods
 
 
 class MoodleAppPositiveTestCases(unittest.TestCase):  # create class
